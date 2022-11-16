@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 
 html {
     font-family: 'Montserrat Regular',Arial, Helvetica, sans-serif;
@@ -45,6 +48,14 @@ a{
 
 #main-nav > a{
     text-transform: uppercase;
+}
+
+#page-header nav.social-nav a{
+    font-size: 1rem;
+}
+
+#page-header nav.social-nav a:hover{
+    color: red;
 }
 
 #hero-section{
@@ -136,4 +147,17 @@ a{
     border-radius: 2rem;
     color: #fff;
     text-transform: uppercase;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{
+    width: 25%;
+    padding: 20px;
+}
+
+.offer-img img{
+    width: 100%;
 }
