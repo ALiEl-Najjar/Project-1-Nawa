@@ -72,17 +72,6 @@ a{
     flex-direction: column;
 }
 
-.header-inner #links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.header-inner #links img{
-    width: 20px;
-    height: 20px;
-}
 
 .hero-box{
     position: relative;
@@ -94,8 +83,8 @@ a{
     border-radius: 50%;
     background-color: #ffd800;
     position: absolute;
-    top: -40px;
-    right: -10px;
+    top: -30px;
+    right: -40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,6 +114,7 @@ a{
     display: block;
 }
 .hero-box h1 .last{
+    font-family: 'Montserrat Regular';
     font-size: 6rem;
     display: block;
     margin-top: -30px;
