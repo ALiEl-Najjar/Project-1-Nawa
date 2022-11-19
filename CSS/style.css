@@ -1,3 +1,10 @@
+@keyframes pulse {
+    from  {box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);}
+    to  {box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); background-color: #f26149;}
+  }
+
+  /* opacity: 0.5; */
+
 *{
     box-sizing: border-box;
 }
@@ -104,6 +111,11 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-delay: 3s;
 }
 .hero-box .price span{
     text-align: center;
@@ -152,16 +164,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     text-transform: uppercase;
 }
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.col{
-    width: 25%;
-    padding: 20px;
-    overflow: hidden;
-}
 
 .offer-img img{
     width: 100%;
@@ -209,20 +211,15 @@ section#offers{
     margin: 0 0.2rem;
 }
 
-@media(max-width: 760px){
-    .col{
-        width: 50%;
-    }
-}
 
 @media(max-width: 480px){
-    .col{
-        width: 100%;
-    }
-    #main-nav{
-        display: none;
-    }
+    
     #page-header{
         padding: 1.2rem 1rem;
     }
+    .red{
+        color: #f26149 !important;
+    }
 }
+
+
